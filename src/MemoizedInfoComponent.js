@@ -2,7 +2,6 @@ import React from 'react';
 import style from './style.css';
 
 let InfoComponent = React.memo(() => {
-  console.log('Inside Info Component');
   return (
     <p>
       1.Counter is a parent Component. It holds the state count. 2.Counter

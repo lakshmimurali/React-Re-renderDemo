@@ -7,12 +7,9 @@ import style from './style.css';
 export default function Counter(props) {
   const [count, setCount] = useState(0);
 
-  console.log(React.useContext(CounterContext));
-
   let contextObj = React.useContext(CounterContext);
   let incBy = contextObj.inc;
   let decBy = contextObj.dec;
-  console.log(props);
 
   let incrementCount = (event) => {
     console.log(count, event.target.value);
@@ -28,7 +25,6 @@ export default function Counter(props) {
     return setCount(0);
   };
 
-  console.log('Inside Counter Component');
 
   return (
     <div>

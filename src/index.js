@@ -5,7 +5,6 @@ import App from './App';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
-console.log('Inside index component');
 root.render(
   <StrictMode>
     <App />
